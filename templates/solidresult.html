@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://i.pinimg.com/originals/f6/57/c8/f657c875461381c86bc86204d8c7b2e9.gif"
+                class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Echo</h2>
+                <!-- <p>This Calculator will find out the distance from where the sound has
+                    been reflected when given the time period.</p> -->
+                <p>Sound heard after reflection from a surface is called echo. Just like heat or light, when sound falls
+                    on a surface, it is partly reflected and partly absorbed. Sound like light can bounce back from an
+                    object. When sound hits a solid surface more than 17 Metres away from the source, we can hear the
+                    sound
+                    again. </p>
+            </div>
+        </div>
+    </div>
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <h2 class="sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5">Calculator</h2>
+            <div class="md:w-3/5 md:pl-6">
+                <p class="leading-relaxed text-base">This Calculator will find out the Distance from where the Sound has
+                    been reflected in Solids when given the Time Period.</p>
+
+            </div>
+        </div>
+    </section>
+    <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-1 mx-auto">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Distance : {{result2}}
+                        
+                    </h1>
+                    <a class="text-indigo-500 inline-flex items-center" href="/solid-calculator">Go back
+                        <!-- <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path d="M5 12h14"></path>
+                          <path d="M12 5l7 7-7 7"></path>
+                        </svg> -->
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    {% endblock %}

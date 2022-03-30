@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://i.pinimg.com/originals/f6/57/c8/f657c875461381c86bc86204d8c7b2e9.gif"
+                class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Echo</h2>
+                <!-- <p>This Calculator will find out the distance from where the sound has
+                    been reflected when given the time period.</p> -->
+                <p>Sound heard after reflection from a surface is called echo. Just like heat or light, when sound falls
+                    on a surface, it is partly reflected and partly absorbed. Sound like Light can bounce back from an
+                    object. When Sound hits a Solid Surface more than 17 Metres away from the Source, we can hear the
+                    Sound
+                    again. </p>
+            </div>
+        </div>
+    </div>
+
+    <section class="body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <h2 class="text-black sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5">Calculator</h2>
+            <div class="md:w-3/5 md:pl-6">
+                <p class="text-white leading-relaxed text-base">This Calculator will find out the Distance from where the Sound has
+                    been reflected in Water when given the Time Period.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+            <form action="result-water-calculator">
+                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                    <div class="flex flex-wrap -m-2">
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="time" class="leading-7 text-sm text-gray-600">Time in Seconds </label>
+                                <input type="text" id="name" name="time"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <button
+                                class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+    {% endblock %}

@@ -1,0 +1,195 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://i.pinimg.com/originals/f6/57/c8/f657c875461381c86bc86204d8c7b2e9.gif"
+                class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Echo</h2>
+                <!-- <p>This Calculator will find out the distance from where the sound has
+                    been reflected when given the time period.</p> -->
+                <p>Sound heard after reflection from a surface is called echo. Just like heat or light, when sound falls
+                    on a surface, it is partly reflected and partly absorbed. Sound like Light can bounce back from an
+                    object. When Sound hits a Solid Surface more than 17 Metres away from the Source, we can hear the
+                    Sound
+                    again. </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <h2 class="sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5">Calculator</h2>
+            <div class="md:w-3/5 md:pl-6">
+                <p class="leading-relaxed text-base">This Calculator will find out the distance from where the sound has
+                    been reflected when given the time period.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+            <form action="result">
+                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                    <div class="flex flex-wrap -m-2">
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="time" class="leading-7 text-sm text-gray-600">Time in Seconds </label>
+                                <input type="text" id="name" name="time"
+                                    class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <button
+                                class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section> -->
+
+
+
+
+    <section class="body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <!-- <div
+                    class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                </div> -->
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-black text-lg title-font font-medium mb-2">Sound In Air</h2>
+                    <p class="text-white leading-relaxed text-base">Air is almost an ideal Gas. The Formula for the Distance from
+                        the
+                        Source of Sound in Air is:</p>
+                    <p><code>d = s*t/2</code></p>
+                    <p class="text-white" >where:</p>
+                    <ul class="text-white" >
+                        <li><code>d</code> - the distance from the source of sound </li>
+                        <li><code>t</code> - time taken for the sound to travel</li>
+                        <li><code>s</code> - the speed of sound in air i.e. 340 m/s</li>
+                    </ul>
+                    <a href="air-calculator/" class="mt-3 text-indigo-500 inline-flex items-center">Calculator
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <!-- <div
+                    class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                </div> -->
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-black text-lg title-font font-medium mb-2">Sound In Water</h2>
+                    <p class="text-white leading-relaxed text-base">The Formula for the Distance from
+                        the
+                        Source of Sound in Water is:</p>
+                        <p><code>d = s*t/2</code></p>
+                        <p class="text-white" >where:</p>
+                        <ul class="text-white" >
+                            <li><code>d</code> - the distance from the source of sound</li>
+                            <li><code>t</code> - time taken for the sound to travel in water</li>
+                            <li><code>s</code> - the speed of sound in water i.e. 1480 m/s</li>
+                        </ul>
+                    <a href="water-calculator/" class="mt-3 text-indigo-500 inline-flex items-center">Calculator
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <!-- <div
+                    class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                </div> -->
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-black text-lg title-font font-medium mb-2">Sound In Solids</h2>
+                    <p class="text-white leading-relaxed text-base">The Formula for the Distance from
+                        the
+                        Source of Sound in Solids is:</p>
+                        <p><code>d = s*t/2</code></p>
+                        <p class="text-white" >where:</p>
+                        <ul class="text-white" >
+                            <li><code>d</code> - the distance from the source of sound </li>
+                            <li><code>t</code> - time taken for the sound to travel in water</li>
+                            <li><code>s</code> - the speed of sound in solids i.e. 6000 m/s</li>
+                        </ul>
+                    <a href="solid-calculator/" class="mt-3 text-indigo-500 inline-flex items-center">Calculator
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <!-- <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The Catalyzer</h2>
+                    <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                        taxidermy. Gastropub indxgo juice poutine.</p>
+                    <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div
+                    class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                        <circle cx="6" cy="6" r="3"></circle>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+                <div
+                    class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+                <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The 400 Blows</h2>
+                    <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan
+                        taxidermy. Gastropub indxgo juice poutine.</p>
+                    <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div> -->
+    </section>
+    {% endblock %}
